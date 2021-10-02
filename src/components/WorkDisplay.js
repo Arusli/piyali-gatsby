@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 const WorkDisplay = () => {
 
@@ -22,7 +22,7 @@ const WorkDisplay = () => {
             {projects.map((project, index) => {
                 const {name} = project;
                 return (
-                    <div key={index} style={{padding: '10px', margin: '5px', backgroundColor: 'pink'}}>{name}</div>
+                    <div key={index} style={{padding: '10px', margin: '5px', backgroundColor: 'pink'}}><Link to='/project1'>{name}</Link></div>
                 )
             })}
         </div>
