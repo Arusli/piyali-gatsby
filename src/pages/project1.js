@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout2 from "../components/Layout2"
+import ProjectPageLayout from "../components/ProjectPageLayout"
 
 const Project1 = () => {
     return (
-        <Layout2>
+        <ProjectPageLayout>
             <h2>Project page</h2>
             Images and Description Here.
-        </Layout2>
+        </ProjectPageLayout>
     )
 }
 
