@@ -3,12 +3,15 @@ import ProjectPageLayout from '../components/ProjectPageLayout'
 import { graphql } from 'gatsby'
 
 const ProjectTemplate = (props) => {
-
-    console.log(props);
-
+    const pageContent = props.data.allContentfulProject.nodes[0];
+    console.log('pageContent', pageContent);
+    const {name, description: {description}, projectNumber, images} = pageContent;
+    
     return (
         <ProjectPageLayout>
-            Hi there, project here
+            <h1>{name}</h1>
+            <h2>images here</h2>
+            <p>{description}</p>
         </ProjectPageLayout>
     )
 }
