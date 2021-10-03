@@ -1,5 +1,6 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link} from 'gatsby'
+import slugify from 'slugify'
 
 const ProjectMenu = () => {
 
@@ -23,8 +24,11 @@ const ProjectMenu = () => {
         <ul style={{display: 'flex', flexDirection: 'row', listStyleType: 'none'}}>
             {projects.map((project, index) => {
                 const {name} = project;
+                const slug = slugify(name, {lower: true});
                 return (
-                <li style={{backgroundColor: 'lime', padding: '5px', margin: '10px'}} key={index}>{name}</li>
+                <Link to={`/${slug}`}>
+                  <li style={{backgroundColor: 'lime', padding: '5px', margin: '10px'}} key={index}>{name}</li>
+                </Link>
                 )
             })}
         </ul>
