@@ -11,12 +11,14 @@ const ProjectTemplate = (props) => {
     return (
         <ProjectPageLayout>
             <h1>{name}</h1>
-            {images.map((obj, index)=>{
-              const imagePath = getImage(obj);
-              return (
-                <GatsbyImage image={imagePath} alt={obj.description} key={obj.id} />
-              )
-            })};
+            <div style={{maxWidth: '800px'}}>
+              {images.map((obj, index)=>{
+                const imagePath = getImage(obj);
+                return (
+                  <GatsbyImage style={{margin: '1rem'}} image={imagePath} alt={obj.description} key={obj.id} />
+                )
+              })}
+            </div>
             <p>{description}</p>
         </ProjectPageLayout>
     )
