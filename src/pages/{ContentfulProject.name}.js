@@ -11,7 +11,7 @@ const ProjectTemplate = (props) => {
     return (
         <ProjectPageLayout>
             <h1>{name}</h1>
-            <div style={{maxWidth: '800px'}}>
+            <div style={{width: '60vw'}}>
               {images.map((obj, index)=>{
                 const imagePath = getImage(obj);
                 return (
