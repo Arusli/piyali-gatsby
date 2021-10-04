@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectPageLayout from '../components/ProjectPageLayout'
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const ProjectTemplate = (props) => {
     const pageContent = props.data.allContentfulProject.nodes[0];
@@ -10,7 +11,12 @@ const ProjectTemplate = (props) => {
     return (
         <ProjectPageLayout>
             <h1>{name}</h1>
-            <h2>images here</h2>
+            {images.map((obj, index)=>{
+              const imagePath = getImage(obj);
+              return (
+                <GatsbyImage image={imagePath} alt={obj.description} key={obj.id} />
+              )
+            })};
             <p>{description}</p>
         </ProjectPageLayout>
     )
@@ -31,6 +37,9 @@ query MyQuery($name: String) {
         projectNumber
         images {
           gatsbyImageData
+          description
+          title
+          id
         }
       }
       totalCount
