@@ -25,11 +25,13 @@ const About = () => {
 
     const {bio: {bio}, profilePicture} = aboutContent;
     console.log(profilePicture);
+    const imagePath = getImage(profilePicture);
 
     return (
         <Layout>
-            <h2>About Page</h2>
-            <h2>Image here</h2>
+            <div style={{width: '40vw'}}>
+              <GatsbyImage image={imagePath} alt='Photo of Piyali' />
+            </div>
             <p>{bio}</p>
         </Layout>
     )
