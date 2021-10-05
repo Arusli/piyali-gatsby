@@ -41,10 +41,11 @@ const WorkDisplay = () => {
 //styles
 
 const Wrapper = styled.div`
-  margin-top: 2rem;
+  margin-top: 2vw;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   grid-template-columns: 1fr;
+  gap: 2vw;
 
   h3 {
     color: blue;
@@ -56,9 +57,8 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    max-width: 60vw;
-    background-color: pink;
+    border: solid 1px black;
+    width: 100%;
   }
 
   .aspect-container {
@@ -66,6 +66,7 @@ const Wrapper = styled.div`
     padding-top: 100%;
     position: relative;
     width: 100%;
+    background-color: pink;
   }
 
   .aspect-inner {
@@ -78,6 +79,14 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  @media only screen and (min-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (min-width: 540px) {
+    grid-template-columns: 1fr 1fr;
   }
 
   @media only screen and (min-width: 680px) {
