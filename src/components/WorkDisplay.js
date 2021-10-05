@@ -57,7 +57,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
     width: 100%;
   }
 
@@ -81,15 +80,12 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
-  @media only screen and (min-width: 480px) {
-    grid-template-columns: 1fr;
-  }
 
-  @media only screen and (min-width: 540px) {
+  @media only screen and (min-width: 480px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media only screen and (min-width: 680px) {
+  @media only screen and (min-width: 960px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 `
