@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import slugify from 'slugify'
+import styled from 'styled-components'
 
 const WorkDisplay = () => {
 
@@ -19,16 +20,38 @@ const WorkDisplay = () => {
     console.log(projects);
 
     return (
-        <div style={{display: 'flex', flexDirection: 'row'}}>
+        <Wrapper>
             {projects.map((project, index) => {
                 const {name} = project;
                 const slug = slugify(name, {lower: true});
                 return (
-                    <div key={index} style={{padding: '10px', margin: '5px', backgroundColor: 'pink'}}><Link to={`/${slug}`}>{name}</Link></div>
+                  <Link to={`/${slug}`} className='project-icon' key={index}>{name}</Link>
                 )
             })}
-        </div>
+        </Wrapper>
     )
 }
+
+//styles
+
+const Wrapper = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  
+  .project-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 5rem;
+    margin: 5px;
+  }
+
+  @media only screen and (min-width: 680px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`
 
 export default WorkDisplay
