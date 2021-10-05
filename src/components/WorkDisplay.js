@@ -22,10 +22,16 @@ const WorkDisplay = () => {
     return (
         <Wrapper>
             {projects.map((project, index) => {
-                const {name} = project;
+                const                       {name}= project;
                 const slug = slugify(name, {lower: true});
                 return (
-                  <Link to={`/${slug}`} className='project-icon' key={index}>{name}</Link>
+                  <Link to={`/${slug}`} className='project-icon' key={index}>
+                    <div className='aspect-container'>
+                      <div className='aspect-inner' >
+                        <h2>{name}</h2> 
+                      </div>                   
+                    </div>
+                  </Link>
                 )
             })}
         </Wrapper>
@@ -44,9 +50,26 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: pink;
-    height: 5rem;
     margin: 5px;
+    max-width: 60vw;
+    background-color: pink;
+  }
+
+  .aspect-container {
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+  }
+
+  .aspect-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 680px) {
