@@ -28,7 +28,7 @@ const WorkDisplay = () => {
                   <Link to={`/${slug}`} className='project-icon' key={index}>
                     <div className='aspect-container'>
                       <div className='aspect-inner' >
-                        <h2>{name}</h2> 
+                        <h3>{name}</h3> 
                       </div>                   
                     </div>
                   </Link>
@@ -45,6 +45,12 @@ const Wrapper = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
+
+  h3 {
+    color: blue;
+    width: 70%;
+    font-size: 1.5rem;
+  }
   
   .project-icon {
     display: flex;
@@ -59,6 +65,7 @@ const Wrapper = styled.div`
     height: 0;
     padding-top: 100%;
     position: relative;
+    width: 100%;
   }
 
   .aspect-inner {
@@ -70,6 +77,7 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   @media only screen and (min-width: 680px) {
