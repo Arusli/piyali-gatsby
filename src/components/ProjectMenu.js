@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link} from 'gatsby'
 import slugify from 'slugify'
+import styled from 'styled-components'
 
 const ProjectMenu = () => {
 
@@ -20,24 +21,41 @@ const ProjectMenu = () => {
 
     //.map
    return (
-    <div>
-        <ul style={{display: 'flex', flexDirection: 'row', listStyleType: 'none'}}>
+    <Wrapper>
+        <ul>
             {projects.map((project, index) => {
                 const {name} = project;
                 const slug = slugify(name, {lower: true});
                 return (
-                <Link to={`/${slug}`} key={index}>
-                  <li style={{backgroundColor: 'lime', padding: '10px'}} key={index}>{name}</li>
+                <Link className='link' to={`/${slug}`} key={index}>
+                  <li key={index} >{name}</li>
                 </Link>
                 )
             })}
         </ul>
-    </div>
-   )
-        
-    
+    </Wrapper>
+   )   
 }
 
+const Wrapper = styled.div`
 
+border-bottom: solid 1px black;
+font-size: 1.2rem;
+padding: 10px 0 10px 0;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0 10px 0;
+    justify-content: space-evenly;
+  }
+
+  li {
+    border: solid 1px grey;
+    padding: 10px;
+    margin: 5px;
+    color: grey;
+  }
+`
 
 export default ProjectMenu

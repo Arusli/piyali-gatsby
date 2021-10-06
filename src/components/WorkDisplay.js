@@ -25,7 +25,7 @@ const WorkDisplay = () => {
                 const {name}= project;
                 const slug = slugify(name, {lower: true});
                 return (
-                  <Link to={`/${slug}`} className='project-icon' key={index}>
+                  <Link to={`/${slug}`} className='link project-icon' key={index}>
                     <div className='aspect-container'>
                       <div className='aspect-inner' >
                         <h3>{name}</h3> 

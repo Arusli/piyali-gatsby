@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <Wrapper>
             <h1>Piyali Sircar | Design Researcher</h1>
-            <h1><Link to='/'>Work</Link> | <Link to='/about'>About</Link></h1>
+            <h1><Link className='link' to='/'>Work</Link> | <Link className='link' to='/about'>About</Link></h1>
         </Wrapper>
     )
 }
