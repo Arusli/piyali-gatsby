@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../components/Layout"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
 
 
 const About = () => {
@@ -29,12 +30,24 @@ const About = () => {
 
     return (
         <Layout>
-            <div style={{width: '40vw'}}>
-              <GatsbyImage image={imagePath} alt='Photo of Piyali' />
-            </div>
-            <p>{bio}</p>
+          <Wrapper>
+            <GatsbyImage className='photo' image={imagePath} alt='Photo of Piyali' />
+            <p className='bio'>{bio}</p>
+          </Wrapper>
         </Layout>
     )
 }
+
+const Wrapper = styled.div`
+  .bio {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .photo {
+    margin-top: 1rem;
+    width: 25vw;
+  }
+`
 
 export default About
