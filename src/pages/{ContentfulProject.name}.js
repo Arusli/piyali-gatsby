@@ -60,9 +60,10 @@ query MyQuery($name: String) {
 
 const Wrapper = styled.div`
 h1 {
-  color: blue;
+  color: brown;
   margin: 10px 0;
   background-color: beige;
+  text-align: center;
 }
 
 p {
@@ -70,7 +71,7 @@ p {
 }
 
 .image {
-  margin: 0 0 10px 0;
+  margin: 0 0 3vw 0;
 }
 
 .grid-container {
@@ -79,6 +80,16 @@ p {
   gap: 2vw;
 }
 
+.images-container {
+  margin-top: 2vw;
+}
+
+.description-container {
+  margin: 2vw;
+}
+
+
+//MEDIA QUERY
 @media only screen and (min-width: 480px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
