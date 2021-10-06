@@ -39,6 +39,9 @@ const About = () => {
 }
 
 const Wrapper = styled.div`
+
+  width: 100%;
+
   .bio {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -46,8 +49,21 @@ const Wrapper = styled.div`
 
   .photo {
     margin-top: 1rem;
-    width: 25vw;
   }
+
+  @media only screen and (min-width: 480px) {
+    .photo {
+      width: 50vw;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    .photo {
+      width: 25vw;
+    }
+  }
+
 `
+//end styled component
 
 export default About

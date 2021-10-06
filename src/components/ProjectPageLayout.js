@@ -9,16 +9,23 @@ import Footer from './Footer'
 const ProjectPageLayout = ({children}) => {
     return (
         <Wrapper>
-            <Navbar />
-            <ProjectMenu />
-            {children}
+            <div className='margins'>
+                <Navbar />
+                <ProjectMenu />
+                {children}
+            </div>
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
-    margin-right: 5vw;
-    margin-left: 5vw;
+    width: 100vw;
+    max-width: 1200px;
+
+    .margins {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
 `
 
 export default ProjectPageLayout

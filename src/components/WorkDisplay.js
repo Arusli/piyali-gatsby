@@ -22,7 +22,7 @@ const WorkDisplay = () => {
     return (
         <Wrapper>
             {projects.map((project, index) => {
-                const                       {name}= project;
+                const {name}= project;
                 const slug = slugify(name, {lower: true});
                 return (
                   <Link to={`/${slug}`} className='project-icon' key={index}>

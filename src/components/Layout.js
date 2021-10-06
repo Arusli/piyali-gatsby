@@ -7,17 +7,23 @@ import styled from 'styled-components'
 const Layout = ({children}) => {
     return (
         <Wrapper>
-            <Navbar />
-            {children}
+            <div className='margins'>
+                <Navbar />
+                {children}
+            </div>
         </Wrapper>
     )
 }
 
 // styling
 const Wrapper = styled.div`
-    margin-right: 5vw;
-    margin-left: 5vw;
+    width: 100vw;
     max-width: 1200px;
+
+    .margins {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
 `
 
 export default Layout
