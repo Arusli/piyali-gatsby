@@ -15,7 +15,7 @@ const ProjectTemplate = (props) => {
               {images.map((obj, index)=>{
                 const imagePath = getImage(obj);
                 return (
-                  <GatsbyImage style={{margin: '1rem'}} image={imagePath} alt={obj.description} key={obj.id} />
+                  <GatsbyImage image={imagePath} alt={obj.description} key={obj.id} />
                 )
               })}
             </div>

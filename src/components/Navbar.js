@@ -13,7 +13,7 @@ const Navbar = () => {
 
 //styled components
 const Wrapper = styled.div`
-    background-color: lightblue;
+    border: solid 1px grey;
     width: 100%;
     display: flex;
     justify-content: space-between;
