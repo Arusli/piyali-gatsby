@@ -40,11 +40,10 @@ const About = () => {
 
 const Wrapper = styled.div`
 
-  width: 100%;
-
   .bio {
     font-size: 1.2rem;
     margin-top: 1rem;
+    text-align: justify;
   }
 
   .photo {
