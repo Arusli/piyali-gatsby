@@ -21,8 +21,8 @@ const Wrapper = styled.div`
     max-width: 1200px;
 
     .margins {
-        margin-right: 5vw;
-        margin-left: 5vw;
+        margin-right: 7vw;
+        margin-left: 7vw;
     }
 `
 
