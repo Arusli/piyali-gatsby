@@ -47,7 +47,6 @@ query MyQuery($name: String) {
       totalCount
     }
   }
-  
 `
 
 export default ProjectTemplate

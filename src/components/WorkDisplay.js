@@ -48,7 +48,7 @@ const Wrapper = styled.div`
   gap: 2vw;
 
   h3 {
-    color: blue;
+    color: black;
     width: 70%;
     font-size: 1.5rem;
   }

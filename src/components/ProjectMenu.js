@@ -40,8 +40,9 @@ const ProjectMenu = () => {
 const Wrapper = styled.div`
 
 border-bottom: solid 1px black;
-font-size: 1.2rem;
+font-size: 1.4rem;
 padding: 10px 0 10px 0;
+margin: 0 0 10px 0;
 
   ul {
     display: flex;

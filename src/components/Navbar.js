@@ -5,8 +5,11 @@ import styled from 'styled-components'
 const Navbar = () => {
     return (
         <Wrapper>
-            <h1>Piyali Sircar | Design Researcher</h1>
-            <h1><Link className='link' to='/'>Work</Link> | <Link className='link' to='/about'>About</Link></h1>
+            <h1 className='site-title'>Piyali Sircar | Design Researcher</h1>
+            <div>
+                <Link className='link' to='/'><h1>Work</h1></Link>
+                <Link className='link' to='/about'><h1>About</h1></Link>
+            </div>
         </Wrapper>
     )
 }
@@ -19,6 +22,14 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 5rem;
+
+    h1 {
+        color: black;
+    }
+
+    .site-title {
+        color: black;
+    }
 `
 
 export default Navbar
