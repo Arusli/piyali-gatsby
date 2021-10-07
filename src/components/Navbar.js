@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 6rem;
 
     h1 {
         color: black;

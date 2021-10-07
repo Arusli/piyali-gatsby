@@ -56,6 +56,7 @@ const Wrapper = styled.div`
   h3 {
     color: black;
     background-color: white;
+    max-width: 70vw;
     padding: 0 15px 5px 0;
     font-size: 1rem;
   }

@@ -40,14 +40,16 @@ const About = () => {
 
 const Wrapper = styled.div`
 
-  .bio {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    text-align: justify;
-  }
-
   .photo {
     margin-top: 1rem;
+  }
+
+  .bio {
+    border-top: 1px solid lightgrey;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: justify;
   }
 
   @media only screen and (min-width: 480px) {

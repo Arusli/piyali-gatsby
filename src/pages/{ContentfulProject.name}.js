@@ -60,9 +60,10 @@ query MyQuery($name: String) {
 
 const Wrapper = styled.div`
 h1 {
-  color: brown;
+  color: white;
+  background-color: black;
   margin: 10px 0;
-  background-color: beige;
+  border: solid 1px grey;
   text-align: center;
 }
 
