@@ -72,7 +72,7 @@ p {
 }
 
 .image {
-  margin: 0 0 3vw 0;
+  margin: 0 0 2vw 0;
 }
 
 .grid-container {
@@ -82,7 +82,8 @@ p {
 }
 
 .images-container {
-  margin-top: 2vw;
+  display: block;
+  margin: 2vw;
 }
 
 .description-container {
@@ -92,12 +93,30 @@ p {
 
 //MEDIA QUERY
 @media only screen and (min-width: 480px) {
+    .images-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2vw;
+    }
+
+    .image {
+      margin: 0 0 0 0;
+    }
+  }
+
+
+@media only screen and (min-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .images-container {
+    display: block;
     grid-column: 1 / 4;
+  }
+
+  .image {
+    margin: 0 0 2vw 0;
   }
   
   .description-container {
