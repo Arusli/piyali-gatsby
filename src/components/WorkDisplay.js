@@ -11,6 +11,11 @@ const WorkDisplay = () => {
         nodes {
           name
           projectNumber
+          backgroundImage {
+            file {
+              url
+            }
+          }
         }
       }
     }
@@ -22,11 +27,12 @@ const WorkDisplay = () => {
     return (
         <Wrapper>
             {projects.map((project, index) => {
-                const {name}= project;
+                const {name, backgroundImage: {file: {url}}}= project;
+                console.log(url)
                 const slug = slugify(name, {lower: true});
                 return (
                   <Link to={`/${slug}`} className='link project-icon' key={index}>
-                    <div className='aspect-container'>
+                    <div className='aspect-container background-image' style={{backgroundImage: `url(${url})`}}>
                       <div className='aspect-inner' >
                         <h3>{name}</h3> 
                       </div>                   
@@ -49,8 +55,9 @@ const Wrapper = styled.div`
 
   h3 {
     color: black;
-    width: 70%;
-    font-size: 1.5rem;
+    background-color: white;
+    padding: 0 15px 5px 0;
+    font-size: 1rem;
   }
   
   .project-icon {
@@ -65,7 +72,6 @@ const Wrapper = styled.div`
     padding-top: 100%;
     position: relative;
     width: 100%;
-    background-color: pink;
   }
 
   .aspect-inner {
@@ -75,11 +81,20 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    backdrop-filter: blur(0px);
   }
 
+  .aspect-inner:hover {
+    backdrop-filter: blur(5px);
+  }
+
+  .background-image {
+    background-position: center;
+    background-size: cover;
+  }
 
   @media only screen and (min-width: 480px) {
     grid-template-columns: 1fr 1fr;
