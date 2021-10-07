@@ -54,13 +54,13 @@ const Wrapper = styled.div`
 
   @media only screen and (min-width: 480px) {
     .photo {
-      width: 50vw;
+      width: 50%;
     }
   }
 
   @media only screen and (min-width: 960px) {
     .photo {
-      width: 25vw;
+      width: 25%;
     }
   }
 
