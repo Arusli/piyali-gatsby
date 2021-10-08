@@ -47,14 +47,15 @@ margin: 0 0 10px 0;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 5px 0 5px 0;
+    margin: 2vw 0 2vw 0;
     justify-content: flex-start;
   }
 
   li {
-    margin: 1vw 3vw;
-    padding: 1vw;
     color: grey;
+    margin: 0 6vw 0 0;
+    padding: 2vw 0;
+    letter-spacing: -.5px;
   }
 `
 
