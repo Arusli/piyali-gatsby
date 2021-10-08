@@ -40,21 +40,20 @@ const ProjectMenu = () => {
 const Wrapper = styled.div`
 
 border-bottom: solid 1px black;
-font-size: 1.4rem;
-padding: 10px 0 10px 0;
+font-size: 1.2rem;
 margin: 0 0 10px 0;
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
-    margin: 10px 0 10px 0;
-    justify-content: space-evenly;
+    margin: 5px 0 5px 0;
+    justify-content: flex-start;
   }
 
   li {
-    border: solid 1px grey;
-    padding: 10px;
-    margin: 5px;
+    margin: 1vw 3vw;
+    padding: 1vw;
     color: grey;
   }
 `
