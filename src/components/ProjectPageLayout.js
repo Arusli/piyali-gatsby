@@ -13,6 +13,7 @@ const ProjectPageLayout = ({children}) => {
                 <Navbar />
                 <ProjectMenu />
                 {children}
+                <Footer />
             </div>
         </Wrapper>
     )

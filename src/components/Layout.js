@@ -10,6 +10,7 @@ const Layout = ({children}) => {
             <div className='margins'>
                 <Navbar />
                 {children}
+                <Footer />
             </div>
         </Wrapper>
     )

@@ -21,7 +21,7 @@ const Navbar = () => {
 
 //styled components
 const Wrapper = styled.div`
-    border-bottom: solid 1px grey;
+    // border-bottom: solid 1px grey;
     width: 100%;
     display: flex;
     justify-content: space-between;
