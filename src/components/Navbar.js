@@ -5,15 +5,17 @@ import styled from 'styled-components'
 const Navbar = () => {
     return (
         <Wrapper>
-            <div>
-            <Link className='link' to='/'>
-                <h1 className='site-title'>Piyali Sircar</h1>
-                <h1 className='subtitle'>Design Researcher</h1>
-            </Link>
-            </div>
-            <div className='container'>
-                <Link className='link container-item' to='/'><h1>Work</h1></Link>
-                <Link className='link container-item' to='/about'><h1>About</h1></Link>
+            <div class="wrapper">
+                <div>
+                <Link className='link' to='/'>
+                    <h1 className='site-title'>Piyali Sircar</h1>
+                    <h1 className='subtitle'>Design Researcher</h1>
+                </Link>
+                </div>
+                <div className='container'>
+                    <Link className='link container-item' to='/work'><h1>Work</h1></Link>
+                    <Link className='link container-item' to='/about'><h1>About</h1></Link>
+                </div>
             </div>
         </Wrapper>
     )
@@ -21,12 +23,14 @@ const Navbar = () => {
 
 //styled components
 const Wrapper = styled.div`
-    // border-bottom: solid 1px grey;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 6rem;
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8rem;
+    }
 
     .container {
         display: flex;
@@ -54,6 +58,11 @@ const Wrapper = styled.div`
     }
 
     @media only screen and (min-width: 480px) {
+
+        .wrapper {
+            height: 9rem;
+        }
+
         h1 {
             font-size: 1.5rem;
         }
@@ -65,6 +74,11 @@ const Wrapper = styled.div`
       }
 
     @media only screen and (min-width: 960px) {
+        
+        .wrapper {
+            height: 10rem;
+        }
+        
         h1 {
             font-size: 2rem;
         }

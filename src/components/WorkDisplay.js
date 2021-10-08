@@ -47,9 +47,11 @@ const WorkDisplay = () => {
 //styles
 
 const Wrapper = styled.div`
+  min-height: 60vh;
   margin-top: 2vw;
   display: grid;
   justify-items: center;
+  align-items: start;
   grid-template-columns: 1fr;
   gap: 2vw;
 
