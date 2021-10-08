@@ -63,12 +63,11 @@ h1 {
   color: white;
   background-color: black;
   margin: 10px 0;
-  border: solid 1px grey;
   text-align: center;
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 .image {
@@ -83,11 +82,11 @@ p {
 
 .images-container {
   display: block;
-  margin: 2vw;
+  margin: 2vw 0;
 }
 
 .description-container {
-  margin: 2vw;
+  margin: 2vw 4vw;
 }
 
 

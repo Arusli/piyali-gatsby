@@ -47,9 +47,9 @@ const Wrapper = styled.div`
   .bio {
     border-top: 1px solid lightgrey;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    text-align: justify;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    text-align: left;
   }
 
   @media only screen and (min-width: 480px) {
