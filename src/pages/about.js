@@ -40,6 +40,8 @@ const About = () => {
 
 const Wrapper = styled.div`
 
+  border-top: solid 1px lightgrey;
+
   .photo {
     margin-top: 1rem;
   }

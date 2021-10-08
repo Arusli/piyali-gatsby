@@ -48,7 +48,6 @@ const WorkDisplay = () => {
 
 const Wrapper = styled.div`
   min-height: 60vh;
-  margin-top: 2vw;
   padding-top: 3vw;
   display: grid;
   justify-items: center;
