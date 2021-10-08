@@ -34,7 +34,7 @@ const WorkDisplay = () => {
                   <Link to={`/${slug}`} className='link project-icon' key={index}>
                     <div className='aspect-container background-image' style={{backgroundImage: `url(${url})`}}>
                       <div className='aspect-inner' >
-                        <h3>{name}</h3> 
+                        <h2>{name}</h2> 
                       </div>                   
                     </div>
                   </Link>
@@ -53,12 +53,13 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr;
   gap: 2vw;
 
-  h3 {
+  h2 {
     color: black;
+    font-weight: normal;
     background-color: white;
     max-width: 70vw;
     padding: 0 15px 5px 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .project-icon {

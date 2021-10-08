@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 
     h1 {
         color: black;
+        font-weight: normal;
     }
 
     .site-title {
