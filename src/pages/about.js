@@ -14,7 +14,7 @@ const About = () => {
             bio
           }
           profilePicture {
-            gatsbyImageData
+            gatsbyImageData(aspectRatio: 1)
           }
         }
       }
