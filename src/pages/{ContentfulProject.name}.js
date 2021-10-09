@@ -59,10 +59,12 @@ query MyQuery($name: String) {
 `
 
 const Wrapper = styled.div`
+
+margin: 20px 0;
+
 h1 {
   color: white;
   background-color: black;
-  margin: 10px 0;
   text-align: center;
 }
 

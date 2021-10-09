@@ -43,14 +43,13 @@ const Wrapper = styled.div`
   border-top: solid 1px lightgrey;
 
   .photo {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
 
   .bio {
     border-top: 1px solid lightgrey;
-    font-size: 1.2rem;
-    margin-top: 3rem;
-    padding: 3rem 0;
+    font-size: 1.1rem;
+    padding: 2rem 0;
     text-align: left;
   }
 
