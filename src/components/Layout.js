@@ -3,12 +3,14 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/styles/main.css'
 import styled from 'styled-components'
+import ProjectMenu from './ProjectMenu'
 
 const Layout = ({children}) => {
     return (
         <Wrapper>
             <div className='margins'>
                 <Navbar />
+                <ProjectMenu />
                 {children}
                 <Footer />
             </div>

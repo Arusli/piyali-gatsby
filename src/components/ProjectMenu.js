@@ -53,9 +53,13 @@ margin: 0;
 
   li {
     color: grey;
-    margin: 0 6vw 0 0;
-    padding: 2vw 0;
+    margin: 0 0 0 0;
+    padding: 1vw 1vw;
     letter-spacing: -.5px;
+  }
+
+  .link {
+    margin: 0 6vw 0 0;
   }
 `
 

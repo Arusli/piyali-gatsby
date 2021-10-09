@@ -48,7 +48,7 @@ const Wrapper = styled.div`
 
   .bio {
     border-top: 1px solid lightgrey;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 2rem 0;
     text-align: left;
   }

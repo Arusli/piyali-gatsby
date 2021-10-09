@@ -39,6 +39,7 @@ const Wrapper = styled.div`
 
     .container-item {
         margin: 0 2vw;
+        padding: 0 1vw;
     }
 
     .subtitle {
