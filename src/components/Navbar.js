@@ -57,6 +57,7 @@ const Wrapper = styled.div`
         color: black;
         font-weight: normal;
         font-size: 1rem;
+        padding: 0;
     }
 
     @media only screen and (min-width: 480px) {

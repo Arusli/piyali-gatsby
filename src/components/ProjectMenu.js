@@ -40,10 +40,10 @@ const ProjectMenu = () => {
 const Wrapper = styled.div`
 
 border-bottom: solid 1px lightgrey;
-font-size: 1.2rem;
 margin: 0;
 
   ul {
+    font-size: .8rem;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -60,6 +60,18 @@ margin: 0;
 
   .link {
     margin: 0 6vw 0 0;
+  }
+
+  @media only screen and (min-width: 480px) {
+    ul {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    ul {
+      font-size: 1.3rem;
+    }
   }
 `
 
