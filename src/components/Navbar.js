@@ -7,14 +7,14 @@ const Navbar = () => {
         <Wrapper>
             <div class="wrapper">
                 <div>
-                <Link className='link' to='/'>
+                <Link className='link' to='/work'>
                     <h1 className='site-title'>Piyali Sircar</h1>
                     <h1 className='subtitle'>Design Researcher</h1>
                 </Link>
                 </div>
                 <div className='container'>
-                    <Link className='link container-item' to='/work'><h1>Work</h1></Link>
-                    <Link className='link container-item' to='/about'><h1>About</h1></Link>
+                    <Link className='link container-item' to='/work' activeClassName='active' partiallyActive={true}><h1>Work</h1></Link>
+                    <Link className='link container-item' to='/about' activeClassName='active'><h1>About</h1></Link>
                 </div>
             </div>
         </Wrapper>

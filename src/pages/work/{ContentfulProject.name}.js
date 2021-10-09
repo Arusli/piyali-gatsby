@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectPageLayout from '../components/ProjectPageLayout'
+import ProjectPageLayout from '../../components/ProjectPageLayout'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'

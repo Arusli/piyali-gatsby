@@ -27,7 +27,7 @@ const ProjectMenu = () => {
                 const {name} = project;
                 const slug = slugify(name, {lower: true});
                 return (
-                <Link className='link' to={`/${slug}`} key={index}>
+                <Link className='link' to={`/work/${slug}`} key={index} activeClassName='active'>
                   <li key={index} >{name}</li>
                 </Link>
                 )
