@@ -88,7 +88,7 @@ p {
 }
 
 .description-container {
-  margin: 2vw 4vw;
+  margin: 2vw 0;
 }
 
 
@@ -108,7 +108,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .images-container {
@@ -116,13 +116,14 @@ p {
     grid-column: 1 / 4;
   }
 
+  .description-container {
+    grid-column: 5 / 7;
+  }
+
   .image {
     margin: 0 0 2vw 0;
   }
   
-  .description-container {
-    grid-column: 4 / 6;
-  }
 } 
 //end media query
 

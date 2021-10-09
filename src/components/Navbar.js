@@ -46,15 +46,16 @@ const Wrapper = styled.div`
         display: none;
     }
 
+    .site-title {
+        color: black;
+        max-width: 60vw;
+        font-weight: bold;
+    }
+
     h1 {
         color: black;
         font-weight: normal;
         font-size: 1rem;
-    }
-
-    .site-title {
-        color: black;
-        max-width: 60vw;
     }
 
     @media only screen and (min-width: 480px) {
