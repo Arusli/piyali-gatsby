@@ -48,7 +48,7 @@ const Wrapper = styled.div`
 
   .bio {
     border-top: 1px solid lightgrey;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: 2rem 0;
     text-align: left;
   }
@@ -57,11 +57,19 @@ const Wrapper = styled.div`
     .photo {
       width: 50%;
     }
+
+    .bio {
+      font-size: .9rem;
+    }
   }
 
   @media only screen and (min-width: 960px) {
     .photo {
       width: 25%;
+    }
+
+    .bio {
+      font-size: 1rem;
     }
   }
 

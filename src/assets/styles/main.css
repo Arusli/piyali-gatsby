@@ -19,3 +19,7 @@ body {
 .active {
     background-color: lime;
 }
+
+li:focus {
+    outline: none;
+}

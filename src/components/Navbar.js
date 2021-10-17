@@ -29,7 +29,7 @@ const Wrapper = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 8rem;
+        height: 5rem;
     }
 
     .container {
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
     @media only screen and (min-width: 480px) {
 
         .wrapper {
-            height: 9rem;
+            height: 7rem;
         }
 
         h1 {
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
     @media only screen and (min-width: 960px) {
         
         .wrapper {
-            height: 10rem;
+            height: 9rem;
         }
         
         h1 {

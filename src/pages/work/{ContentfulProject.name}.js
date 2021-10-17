@@ -13,7 +13,7 @@ const ProjectTemplate = (props) => {
         <ProjectPageLayout>
           <Wrapper>
             <header>
-              <h1>{name}</h1>
+              <h1 class='project-name'>{name}</h1>
             </header>
             <section className='grid-container' >
               <div className='images-container' >
@@ -25,7 +25,7 @@ const ProjectTemplate = (props) => {
                 })}
               </div>
               <div className='description-container'>
-                <p>{description}</p>
+                <p class='description'>{description}</p>
               </div>
             </section>
           </Wrapper>
@@ -72,6 +72,14 @@ p {
   text-align: left;
 }
 
+.description {
+  font-size: .8rem;
+}
+
+.project-name {
+  font-size: 1.2rem;
+}
+
 .image {
   margin: 0 0 2vw 0;
 }
@@ -94,6 +102,7 @@ p {
 
 //MEDIA QUERY
 @media only screen and (min-width: 480px) {
+
     .images-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -103,10 +112,27 @@ p {
     .image {
       margin: 0 0 0 0;
     }
-  }
+
+    .project-name {
+      font-size: 1.6rem;
+    }
+
+    .description {
+      font-size: .9rem;
+    }
+}
 
 
 @media only screen and (min-width: 768px) {
+
+  .project-name {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
