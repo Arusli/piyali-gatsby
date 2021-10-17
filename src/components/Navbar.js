@@ -8,7 +8,7 @@ const Navbar = () => {
             <div class="wrapper">
                 <div>
                 <Link className='link' to='/work'>
-                    <h1 className='site-title'>Piyali Sircar</h1>
+                    <h1 className='site-title'>Penelope S.</h1>
                     <h1 className='subtitle'>Design Researcher</h1>
                 </Link>
                 </div>

@@ -7,7 +7,7 @@ const Footer = () => {
     const year = date.getFullYear();
     return (
         <Wrapper>
-            <h5>&copy; {year} Piyali Sircar</h5>
+            <h5>&copy; {year} Penelope S.</h5>
         </Wrapper>
     )
 }
