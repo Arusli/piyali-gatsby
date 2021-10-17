@@ -59,7 +59,7 @@ margin: 0;
   }
 
   .link {
-    margin: 0 6vw 0 0;
+    margin: 1vw 6vw 0 0;
   }
 
   @media only screen and (min-width: 480px) {
