@@ -10,7 +10,6 @@ const Layout = ({children}) => {
         <Wrapper>
             <div className='margins'>
                 <Navbar />
-                <ProjectMenu />
                 {children}
                 <Footer />
             </div>
