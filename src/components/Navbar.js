@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Navbar = () => {
     return (
         <Wrapper>
-            <div class="wrapper">
+            <div className="wrapper">
                 <div>
                 <Link className='link' to='/work'>
                     <h1 className='site-title'>Penelope S.</h1>

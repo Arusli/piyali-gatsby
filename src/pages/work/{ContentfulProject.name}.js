@@ -3,17 +3,18 @@ import ProjectPageLayout from '../../components/ProjectPageLayout'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
+import ReactMarkdown from 'react-markdown'
 
 const ProjectTemplate = (props) => {
     const pageContent = props.data.allContentfulProject.nodes[0];
     console.log('pageContent', pageContent);
     const {name, description: {description}, projectNumber, images} = pageContent;
-    
+    const markdown = description;
     return (
         <ProjectPageLayout>
           <Wrapper>
             <header>
-              <h1 class='project-name'>{name}</h1>
+              <h1 className='project-name'>{name}</h1>
             </header>
             <section className='grid-container' >
               <div className='images-container' >
@@ -25,7 +26,8 @@ const ProjectTemplate = (props) => {
                 })}
               </div>
               <div className='description-container'>
-                <p class='description'>{description}</p>
+                {/* <p className='description'>{description}</p> */}
+                <ReactMarkdown className='description' children={markdown} />
               </div>
             </section>
           </Wrapper>
@@ -68,11 +70,8 @@ h1 {
   text-align: center;
 }
 
-p {
-  text-align: left;
-}
-
 .description {
+  text-align: left;
   font-size: .8rem;
 }
 
