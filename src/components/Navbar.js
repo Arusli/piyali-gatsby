@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 
     .container-item {
         margin: 0 2vw;
-        padding: 0 1vw;
+        padding: 0 .1rem;
     }
 
     .subtitle {
@@ -73,6 +73,10 @@ const Wrapper = styled.div`
         .subtitle {
             display: block;
             font-size: 1.4rem;
+        }
+
+        .container-item {
+            padding: 0 .5rem;
         }
       }
 

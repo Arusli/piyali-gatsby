@@ -17,7 +17,7 @@ body {
 }
 
 .active {
-    background-color: lime;
+    background-color: #99ff99;
 }
 
 li:focus {

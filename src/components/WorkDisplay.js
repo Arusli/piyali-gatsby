@@ -62,7 +62,7 @@ const Wrapper = styled.div`
     background-color: white;
     max-width: 70vw;
     padding: 0 15px 5px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .project-icon {
@@ -103,10 +103,18 @@ const Wrapper = styled.div`
 
   @media only screen and (min-width: 480px) {
     grid-template-columns: 1fr 1fr;
+
+    h2 {
+      font-size: 1.1rem;
+    }
   }
 
   @media only screen and (min-width: 960px) {
     grid-template-columns: 1fr 1fr 1fr;
+
+    h2 {
+      font-size: 1.2rem;
+    }
   }
 `
 

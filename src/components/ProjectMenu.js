@@ -53,8 +53,8 @@ margin: 0;
 
   li {
     color: grey;
-    margin: 0 0 0 0;
-    padding: 1vw 1vw;
+    margin: 0;
+    padding: 0 .1rem;
     letter-spacing: -.5px;
   }
 
@@ -65,6 +65,10 @@ margin: 0;
   @media only screen and (min-width: 480px) {
     ul {
       font-size: 1.1rem;
+    }
+
+    li {
+      padding: 0 .5rem;
     }
   }
 
