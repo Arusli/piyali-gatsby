@@ -1,4 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+Deployment Notes: 
+1. Site is deployed to Netlify with continuous deployment via Github. Updating the github updates the deployed version.
+2. When deploying, Netlify requires the Environment Variables to be manually entered/updated. If for some reason the Contentful key gets changed, that will need to be updated in the Netlify settings.
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
